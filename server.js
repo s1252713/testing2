@@ -102,7 +102,7 @@ app.post('/register', (req, res) => {
   }
 });
 
-app.use('/', require('./models/routes/Employee'));
+app.use('/', require('./models/routes/employee'));
 
 app.get('*', (req, res) => {
   res.status(404).render('404');
